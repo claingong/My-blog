@@ -13,6 +13,15 @@ Hello lovely to meet you!
 > woops.
 
 <a href="https://hao·blog.netlify.app/">Me. online</a>
-<a href="week-3-fix-the-gallery-of-nonsense-claingong/about.html">Gallery of nonsence</a>
+
+[About me](/media/wk1-british-museum-claingong/wk/about me.html)
+
+[Gallery of nonsence museum](/media/week-3-fix-the-gallery-of-nonsense-claingong/about.html)
+
+
+![alt Picture of cat](/media/img/cats.png)
+
+
+<img src="/media/girl.jpg">
 
 This is **my** _blog_.
