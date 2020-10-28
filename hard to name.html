@@ -1,0 +1,29 @@
+---
+layout: page
+title: Abou
+permalink: /about/
+--- 
+
+
+{% for item in site.data.notsure limit: 5  %}
+<p>{item.value}}: <a href="{{item.blog_url}}">blog</a></p>
+
+{% else %}
+
+<p>Couldn't find anything</p>
+
+{% endfor %}
+
+
+
+<table>
+    {% tablerow student in site.data.students %}
+    {{ student.name }}
+    {% endtablerow %}
+    {% tablerow student in site.data.students %}
+    {{ student.github_username }}
+    {% endtablerow %}
+    {% tablerow student in site.data.students %}
+    {{ student.blog_url }}
+    {% endtablerow %}
+    </table>
