@@ -1,8 +1,7 @@
 ---
 layout: digitalobject
 artist: Henri Matisse
-title: Femme au chapeau 
-(Woman with a Hat) 
+title: Femme au chapeau (Woman with a Hat) 
 year: 1905
 medium: painted oil on canvas
 owned_by: SFMOMA

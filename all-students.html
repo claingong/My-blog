@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Abou
-permalink: /about/
+title: All my students
 --- 
 
 
-{% for item in site.data.notsure limit: 5  %}
-<p>{item.value}}: <a href="{{item.blog_url}}">blog</a></p>
+{% for student in site.data.students %}
+<p>{{ student.name }}: <a href="{{ student.blog_url  }}">blog</a></p>
 
 {% else %}
 
