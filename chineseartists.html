@@ -1,0 +1,41 @@
+---
+layout: page
+title: Chinese artists
+--- 
+<table>
+  {% tablerow cartists in site.data.artists %}
+  <a href="#{{ cartists.EnglishName }}">{{ cartists.EnglishName }}</a> 
+  {% endtablerow %}
+  {% tablerow cartists in site.data.artists %}
+  {{ cartists.ArtistID }}
+  {% endtablerow %}
+  {% tablerow cartists in site.data.artists %}
+  {{ cartists.ChineseName }}
+  {% endtablerow %}
+  {% tablerow cartists in site.data.artists %}
+  {{ cartists.Birth-Year }}
+  {% endtablerow %}
+</table>
+
+
+
+<ul>
+{% for cartists in site.data.artists %}
+
+<h2 id="{{cartists.EnglishName}}">{{ cartists.EnglishName }} ({{ cartists.ChineseName }}):</h2> 
+
+  <li><p><b>The Nationality:</b>    {{ cartists.Nationality }}</p></li>
+  <li><h4>The Masterpiece:</h4></li>
+     <li> {% for i in (1..3) %}
+       <img src="/media/china-artworks/{{ cartists.EnglishName | replace:" ","_" }}_/{{ cartists.EnglishName | replace:" ","_" }}_0{{i}}.jpg">
+         {{ i }}
+        {% endfor %}
+      </li>
+
+  <li><p><b>Gender:</b> {{ cartists.Gender }}</p></li>
+  <li><p><b>Birth Year:</b>{{ cartists.Birth-Year }}</p></li>
+  <li><p><b>Death Year:</b>{{ cartists.Death-Year }}</p></li>
+    {% endfor %}
+</ul>
+
+

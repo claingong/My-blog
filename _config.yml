@@ -56,3 +56,6 @@ plugins:
 collections:
   artworks:
     output: ture 
+
+  archives:
+    output: ture
